@@ -15,6 +15,22 @@ padding: 0;
 box-sizing: border-box;
     }
 
+nav {
+    background-color:pink ;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    color:red;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color:#eeeeee;
+    color: black;
+}
+
 header {
 background-color: rgb(255, 255, 255);
 background-image: url(./img/security-ge0f7fb731_1280.jpg);
@@ -37,11 +53,10 @@ display: inline;
 
 <body>
     <header>
-        <div>
-
+        <div id="logo">
             <img src="https://avatars.githubusercontent.com/u/111514652?s=400&u=2d1d10781133ed59b21a64203f07f37f906fc306&v=4" alt="foto do usuario">
         </div>
-        <div>
+        <div id="dados">
         <h1>Seu nome completo</h1>
         <p>Progamandor WEB</p>
         <p>Rio de Janeiro, Brasil<br>Campo Grande</p>
@@ -56,23 +71,18 @@ display: inline;
     </header>
 
     <nav>
-        <p>Inicio</p>
-        <p>Projetos</p>
-        <p>Empresa</p>
+        <a href="index.html">Inicio</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#empresas">Empresas</a>
     </nav>
 
-    <section>
+    <section id="projetos">
         <h1>Projetos</h1>
         <p>Casa Feliz</p>
         <p>Prime Food </p>
     </section>
 
-    <section>
-   <style>
-    section h1{
-        color: hsl(118, 61%, 38%);
-    }
-   </style>
+   <section id="empresas":>
         <h1>Empresas</h1>
         <p>Senac Rio</p>
         <p>Rio Águas</p>
