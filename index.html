@@ -1,95 +1,198 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<!-- https://pixabay.com-->
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 340 ~ 460px -->
-    <title>Document</title>
+    <title>Currículo Pablo</title>
 
-<style>
-   * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-    }
+    <style>
+        /* reset de estilo */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-nav {
-    background-color:pink ;
-}
+        header {
+            background-color: rgb(97, 59, 59);
+            background-image: url(/img/programmer-gb9a55aed7_1280.png);
+            background-position: center;
+            background-size: cover;
+            color: #cfd8dc;
+            padding: 70px;
+            text-align: center;
+        }
 
-nav a {
-    display: inline-block;
-    padding: 10px 20px;
-    color:red;
-    text-decoration: none;
-}
+        header h1 {
+            color: rgb(60,82,92);
+        }
 
-nav a:hover {
-    background-color:#eeeeee;
-    color: black;
-}
+        header p {
+            color:rgb(60,82,92);
 
-header {
-background-color: rgb(255, 255, 255);
-background-image: url(./img/security-ge0f7fb731_1280.jpg);
-background-position: center;
-background-size: cover;
-color: #eeeeee;
-padding: 30px;
-text-align: center;
-}
-header h1{
-    color: hsl(118, 61%, 38%);
-}
-header div {
-display: inline;
-    width: 48%;
-}
-</style>
+        }
 
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #logo {
+            width: 100%;
+            float: left;
+        }
+
+        #logo img {
+            border-radius: 30%;
+            height:25%; width:20%;
+        }
+
+        #dados {
+            width: 100%;
+            float: left;
+        }
+
+        .row {
+            display: table;
+            float: none;
+            content: "";
+            overflow: auto;
+        }
+
+        nav {
+            background-color: #607d8b;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            text-align: center;
+            padding: 10px 20px;
+            color: #eeeeee;
+            text-decoration: none;
+
+        }
+
+        nav a:hover {
+            background-color: #eeeeee;
+            color: rgb(60,82,92);
+        }
+
+        #projetos {
+            background-color:#cfd8dc;
+            padding: 10px 10px;
+            text-align: center;
+            
+        }
+        
+        #projetos img{
+            display: inline-block;
+        }
+
+        #empresas {
+            background-color: #cfd8dc;
+            padding: 10px 10px;
+            text-align: center;
+        }
+
+
+        #tecnologia {
+            background-color: #cfd8dc;
+            padding: 100px 100px;
+            text-align: center;
+        }
+
+        #cursos {
+            background-color: #cfd8dc;
+            padding: 100px 100px;
+            text-align: center;
+        }
+
+        #rodape {
+            background-color:#607d8b;
+            
+        }
+
+    </style>
 </head>
 
 <body>
-    <header>
+    <header class="row">
         <div id="logo">
-            <img src="https://avatars.githubusercontent.com/u/111514652?s=400&u=2d1d10781133ed59b21a64203f07f37f906fc306&v=4" alt="foto do usuario">
+            <img src="img/WhatsApp Image 2022-08-30 at 13.59.30 (1).jpeg" alt="foto do usuario">
         </div>
         <div id="dados">
-        <h1>Seu nome completo</h1>
-        <p>Progamandor WEB</p>
-        <p>Rio de Janeiro, Brasil<br>Campo Grande</p>
-        <img src="./img/icons8-facebook-novo-128.png" alt="logo facebook - com link para rede social  da pessoa"
-            height="30">
+            <h1>Pablo Luis Silva Lopes</h1>
+            <p>Progamandor WEB</p>
+            <p>Rio de Janerio, Brasil</p>
+            <div>
+                <img src="./img/icons8-facebook-novo-128.png" alt="logo facebook - com link para rede social  da pessoa"
+                    height="30">
 
-        <img src="./img/icons8-instagram-128.png" alt="logo instagram - com link para rede social da pessoa"
-            height="30">
+                <img src="./img/icons8-instagram-128.png" alt="logo instagram - com link para rede social da pessoa"
+                    height="30">
 
-        <img src="./img/icons8-twitter-128.png" alt="logo instagram - com link para rede social da pessoa" height="30">
-    </div>
+                <img src="./img/icons8-twitter-128.png" alt="logo instagram - com link para rede social da pessoa"
+                    height="30">
+            </div>
+        </div>
     </header>
 
     <nav>
-        <a href="index.html">Inicio</a>
+        <a href="index.html">Início</a>
         <a href="#projetos">Projetos</a>
-        <a href="#empresas">Empresas</a>
+        <a href="#empresas">Empresa</a>
+        <a href="tecnologias">Tecnologia</a>
+        <a href="cursos>">Cursos</a>
+        
     </nav>
 
     <section id="projetos">
         <h1>Projetos</h1>
-        <p>Casa Feliz</p>
-        <p>Prime Food </p>
-    </section>
+        <p>Curriculum</p>
+        <div>
+        <img src="./img/computer-g26cb0afde_640.png";alt="projeto corporativo";
+        height="200";>
+        <img src="./img/computer-g26cb0afde_640.png"; alt="projeto corporativo";
+        height="200";>
+        <p> Projetos corporativos para otimizar a gestão de dados.</p>
+    </div>
+     </section>
 
-   <section id="empresas":>
+    <section id="empresas">
         <h1>Empresas</h1>
-        <p>Senac Rio</p>
-        <p>Rio Águas</p>
+        <div>
+            <img src="./img/men-g19f6e50b1_640.png"; alt="empresas parceiras";
+            height="200";>
+        <p>Com foco em performance, algumas das empresas parceiras: </p>
+        <section id="empresaslogo">
+            <img src="./img/kisspng-brazil-petrobras-distribuidora-sa-business-oil-ref-tocha-uniformes-esportes-5b64842c441e56.644674031533314092279.png"; alt="petrobras";
+            height="130";>
+            <img src="./img/kisspng-nyse-vale-pelletizing-company-iron-ore-rio-5ad0f6a194d8c7.1437537815236440656097.png"; alt="vale";
+            height="60";>
+            <img src="./img/kisspng-dof-asa-dof-subsea-business-shareholder-5b252a33dca8b9.8568819815291622919038.png"; alt="sea";
+            height="70";>
+        </section>
+    </div>
+
     </section>
 
-    <footer>
-        <p>Feito por: Fabiano</p>
+<section id="tecnologia">
+<h1>Tecnologias</h1>
+<p>HTML</p>
+<p>CSS</p>
+</section>
+
+<section id="cursos">
+    <h1> Cursos</h1>
+    <p>Programador Web Senac-Rio</p>
+</section>
+
+    </footer>
+        <p>Feito por: Pablo Lopes</p>
     </footer>
 
 </body>
